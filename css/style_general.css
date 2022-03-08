@@ -144,6 +144,7 @@ nav ul li {
   --primary-font: "Fredoka", sans-serif;
   --secondary-font: "Rubik", sans-serif;
   --font-color: #464646;
+  --secondary-font-color: #ffffff;
 
   /* BUTTONS */
   --button-white: white;
@@ -261,6 +262,87 @@ button {
   display: grid;
   row-gap: 0.5rem;
 }
+
+/* PRODUCTLIST PAGE */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#filters {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+}
+
+.productlist {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 8%;
+}
+
+.productlist article {
+  padding: 1rem 0 2.5rem 0;
+}
+
+article h2 {
+  border: 0px;
+  font-weight: 400;
+  font-size: 1.8em;
+  min-height: 3.4rem;
+  padding: 0%;
+  margin: 0;
+  background-color: var(--button-gradient);
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-font-color);
+}
+
+article .price {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.productWithText {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.2rem;
+}
+.productlist article img {
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.smallAddToCartButton {
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+article .addToCartArea {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* MEDIA QUERIES */
 
 /* RESPONSIVE PRODUCTPAGE - DESKTOP */
 @media (min-width: 665px) {

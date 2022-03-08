@@ -11,105 +11,155 @@
 
   <body>
     <nav>
-        <img src="css/assets/logo.svg" id="logo" alt="logo">
-        <ul id="navigation_list">
-            <li><a href="index.html">home</a></li>
-            <li><a href="shop.html">shop</a></li>
-            <li>about</li>
-            <li>contact</li>
-            <li><a href="customise.html">create your soap</a></li>
-            <li>sign up</li>
-            <li><img src="" alt="cart icon"></li>
-        </ul>
+      <img src="css/assets/logo.svg" id="logo" alt="logo" />
+      <ul id="navigation_list">
+        <li><a href="index.html">home</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li>about</li>
+        <li>contact</li>
+        <li><a href="customise.html">create your soap</a></li>
+        <li>sign up</li>
+        <li><img src="" alt="cart icon" /></li>
+      </ul>
     </nav>
 
-    <main>
-        <div class="breadcrumbs">
-            <span><a href="index.html">home</a></span>
-            <span>></span>
-            <span>Shop</span>
+    <main class="productlist">
+      <div class="breadcrumbs">
+        <span><a href="index.html">home</a></span>
+        <span>></span>
+        <span>Shop</span>
+      </div>
+
+      
+
+      <!-- filters -->
+
+      <div id="filters">
+        <div class="dropdown">
+          <button>sort by</button>
+          <div class="dropdown-content">
+            <li>latest first</li>
+            <li>oldest first</li>
+            <li>highest price</li>
+            <li>lowest price</li>
+          </div>
+        
+        <div class="dropdown">
+          <button>filters</button>
+          <div class="dropdown-content">
+            <ul>
+              <li>Keep it simple</li>
+              <li><span>no perfume</span><span class="q_items"></span></li>
+              <li><span>no colors</span><span class="q_items"></span></li>
+            </ul>
+            <ul>
+              <li>Oils and butters</li>
+              <li><span>avocado oil(5)</span><span class="q_items"></span></li>
+              <li><span>canola oil(3)</span><span class="q_items"></span></li>
+              <li><span>castor oil(8)</span><span class="q_items"></span></li>
+              <li><span>cocoa butter(9)</span><span class="q_items"></span></li>
+              <li><span>coconut oil(5)</span><span class="q_items"></span></li>
+              <li><span>olive oil(2)</span><span class="q_items"></span></li>
+              <li><span>shea butter(4)</span><span class="q_items"></span></li>
+              <li>
+                <span>sunflower oil(6)</span><span class="q_items"></span>
+              </li>
+            </ul>
+            <ul>
+              <li>Essential oils</li>
+              <li><span>camomile roman</span><span class="q_items"></span></li>
+              <li><span>cinnamon</span><span class="q_items"></span></li>
+              <li><span>ginger</span><span class="q_items"></span></li>
+              <li><span>jasmine</span><span class="q_items"></span></li>
+              <li><span>lavander</span><span class="q_items"></span></li>
+              <li><span>thyme</span><span class="q_items"></span></li>
+              <li><span>cedarwood</span><span class="q_items"></span></li>
+              <li><span>frankincense</span><span class="q_items"></span></li>
+              <li>
+                <span>Helichrysum/Immortelle</span><span class="q_items"></span>
+              </li>
+              <li><span>Patchouli</span><span class="q_items"></span></li>
+              <li><span>Sandalwood</span><span class="q_items"></span></li>
+              <li><span>vetiver</span><span class="q_items"></span></li>
+              <li><span>bergamot</span><span class="q_items"></span></li>
+              <li><span>grapefruit</span><span class="q_items"></span></li>
+              <li><span>lemon</span><span class="q_items"></span></li>
+              <li><span>orange sweet</span><span class="q_items"></span></li>
+              <li><span>rosemary</span><span class="q_items"></span></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      </div>
 
-        <div id="quiz">
-            <h2>Can't decide?</h2>
-            <button>take a quiz</button>
+      <p>showing 10 products</p>
+
+      <!-- product list -->
+
+      <article>
+        <div class="productWithText">
+          <img href="product.html" src="css/assets/products/soap6.svg" alt="" />
+          <h2>Calming Soap</h2>
         </div>
+        <div class="addToCartArea">
+          <p class="price">65kr</p>
+          <button class="smallAddToCartButton">ADD TO CART</button>
+        </div>
+      </article>
 
-        <!-- filters -->
+      <article>
+        <div class="productWithText">
+          <img href="product.html" src="css/assets/products/soap6.svg" alt="" />
+          <h2>Calming Soap</h2>
+        </div>
+        <div class="addToCartArea">
+          <p class="price">65kr</p>
+          <button class="smallAddToCartButton">ADD TO CART</button>
+        </div>
+      </article>
 
-        <div id="filters">
-            <div id="dropdown">
-                <button>sort by</button>
-                <div class="dropdown_content">
-                    <li>latest first</li>
-                    <li>oldest first</li>
-                    <li>highest price</li>
-                    <li>lowest price</li>
-                </div>
+      <article>
+        <div class="productWithText">
+          <img href="product.html" src="css/assets/products/soap6.svg" alt="" />
+          <h2>Calming Soap</h2>
+        </div>
+        <div class="addToCartArea">
+          <p class="price">65kr</p>
+          <button class="smallAddToCartButton">ADD TO CART</button>
+        </div>
+      </article>
+
+      <article>
+        <div class="productWithText">
+          <img href="product.html" src="css/assets/products/soap6.svg" alt="" />
+          <h2>Calming Soap</h2>
+        </div>
+        <div class="addToCartArea">
+          <p class="price">65kr</p>
+          <button class="smallAddToCartButton">ADD TO CART</button>
+        </div>
+      </article>
+
+      <div id="quiz">
+        <h2>Can't decide?</h2>
+        <button>take a quiz</button>
+      </div>
+
+      <!-- <div id="product_list">
+        <template id="product_group">
+          <div class="product_link">
+            <img src="" alt="" />
+            <div class="product_name">
+              <h3></h3>
             </div>
-            <div id="dropdown_filters">
-                <button>filters</button>
-                <div class="dropdown_content">
-                    <ul>
-                        <li>Keep it simple</li>
-                        <li><span>no perfume</span><span class="q_items"></span></li>
-                        <li><span>no colors</span><span class="q_items"></span></li>
-                    </ul>
-                    <ul>
-                        <li>Oils and butters</li>
-                        <li><span>avocado oil</span><span class="q_items"></span></li>
-                        <li><span>canola oil</span><span class="q_items"></span></li>
-                        <li><span>castor oil</span><span class="q_items"></span></li>
-                        <li><span>cocoa butter</span><span class="q_items"></span></li>
-                        <li><span>coconut oil</span><span class="q_items"></span></li>
-                        <li><span>olive oil</span><span class="q_items"></span></li>
-                        <li><span>shea butter</span><span class="q_items"></span></li>
-                        <li><span>sunflower oil</span><span class="q_items"></span></li>
-                    </ul>
-                    <ul>
-                        <li>Essential oils</li>
-                        <li><span>camomile roman</span><span class="q_items"></span></li>
-                        <li><span>cinnamon</span><span class="q_items"></span></li>
-                        <li><span>ginger</span><span class="q_items"></span></li>
-                        <li><span>jasmine</span><span class="q_items"></span></li>
-                        <li><span>lavander</span><span class="q_items"></span></li>
-                        <li><span>thyme</span><span class="q_items"></span></li>
-                        <li><span>cedarwood</span><span class="q_items"></span></li>
-                        <li><span>frankincense</span><span class="q_items"></span></li>
-                        <li><span>Helichrysum/Immortelle</span><span class="q_items"></span></li>
-                        <li><span>Patchouli</span><span class="q_items"></span></li>
-                        <li><span>Sandalwood</span><span class="q_items"></span></li>
-                        <li><span>vetiver</span><span class="q_items"></span></li>
-                        <li><span>bergamot</span><span class="q_items"></span></li>
-                        <li><span>grapefruit</span><span class="q_items"></span></li>
-                        <li><span>lemon</span><span class="q_items"></span></li>
-                        <li><span>orange sweet</span><span class="q_items"></span></li>
-                        <li><span>rosemary</span><span class="q_items"></span></li>
-                    </ul>
-                </div>
+            <div class="purchase_info">
+              <p class="price"></p>
+              <a href=""><button>add to cart</button></a>
             </div>
-        </div>
-
-        <!-- product list -->
-
-        <div id="product_list">
-
-            <template id="product_group">
-                <div class="product_link">
-                    <img src="">
-                    <div class="product_name">
-                        <h3></h3>
-                    </div>
-                    <div class="purchase_info">
-                        <p class="price"></p>
-                        <a href=""><button>add to cart</button></a>
-                    </div>
-                </div>
-            </template>
-            
-        </div>
-
-    </main>
+          </div>
+        </template>
+      </div>
+    </main> -->
 
     <footer>
       <div id="links">
