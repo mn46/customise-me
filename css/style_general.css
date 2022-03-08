@@ -19,7 +19,7 @@ button {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
 }
 
 nav ul li a {
@@ -39,7 +39,7 @@ nav ul li {
   height: 95vh;
   text-align: center;
   background-image: url(assets/background.svg);
-  background-repeat: no-repeat ;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -59,9 +59,9 @@ nav ul li {
   width: 20vh;
   text-transform: uppercase;
 }
- #main_cta a {
+#main_cta a {
   margin: auto;
- }
+}
 
 #more {
   grid-column: 2/3;
@@ -85,7 +85,7 @@ nav ul li {
 
 #how div {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   font-family: var(--primary-font);
   color: blue;
 }
@@ -138,8 +138,6 @@ nav ul li {
   grid-row: 2/3;
   margin: auto;
 }
-
-
 
 :root {
   /* FONTS */
@@ -218,7 +216,7 @@ button {
   font-family: var(--primary-font);
   font-size: 2.4em;
   font-weight: 300;
-  padding-top: 0.2rem;
+  padding-top: 1.2rem;
   padding-bottom: 0.2rem;
   margin: 0;
 }
