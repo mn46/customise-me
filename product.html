@@ -9,18 +9,31 @@
     <title>Customise Me</title>
   </head>
   <body>
+    <header><nav>
+      <img src="css/assets/logo.svg" id="logo" alt="logo">
+      <ul id="navigation_list">
+          <li><a href="index.html">home</a></li>
+          <li><a href="shop.html">shop</a></li>
+          <li>about</li>
+          <li>contact</li>
+          <li><a href="customise.html">create your soap</a></li>
+          <li>sign up</li>
+          <li><img src="" alt="cart icon"></li>
+      </ul>
+  </nav></header>
     <main class="productpage">
       <img src="soap_placeholder.png" alt="image-of-soap"/>
       <div class="productInfoArea">
       <h2>Calming Soap</h2>
       <p class="price">65,00 kr</p>
       <p>Calm, relaxing soap with smell of lavender and sandalwood</p>
-      <div>
-        <button>-</button>
-        <div class="amountArea"></div>
+      <div class="quantityPicker">
+        <button class="minusButton">-</button>
+        <div class="amountArea">1</div>
         <button>+</button>
       </div>
-      <button>ADD TO CART</button>
+      <button class="addToCart">ADD TO CART</button>
+      <div class="productTextInfo">
       <h4>Experience the benefits</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis
@@ -40,6 +53,7 @@
         nec metus urna <br />
       </p>
     </div>
+    </div>
 
       <div>
         <img src="" alt="icon" />
@@ -55,5 +69,29 @@
       </div>
     </div>
     </main>
+
+    <footer>
+      <div id="links">
+        <p>faq</p>
+        <p>Shipping details</p>
+        <p>Cookies and privacy policy</p>
+      </div>
+      <div id="address">
+        <p>CustomiseMe ApS</p>
+        <p>Falen 21D, 2TV 5000 Odense C</p>
+        <p>CVR: 42657603</p>
+      </div>
+      <div id="contact">
+        <p>info@customiseme.dk</p>
+        <div id="some">
+          <a href="https://www.facebook.com/customisemedk" target="_blank"
+            ><img src="" alt="facebook icon"
+          /></a>
+          <a href="https://www.instagram.com/customisemedk/" target="_blank"
+            ><img src="" alt="facebook icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
