@@ -9,17 +9,16 @@
   margin-left: 2vh;
 }
 
-nav  {
+nav {
   width: 100%;
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   border-bottom: 1px solid grey;
 }
 
 nav ul li a {
   text-decoration: none;
 }
-
 
 nav ul li {
   display: inline-block;
@@ -44,7 +43,6 @@ nav ul li {
   padding: 6px;
   margin: auto;
 }
-
 
 #more {
   grid-column: 2/3;
@@ -173,4 +171,67 @@ button {
   padding-top: 2rem;
   display: grid;
   row-gap: 0.5rem;
+}
+
+/* RESPONSIVE PRODUCTPAGE - DESKTOP */
+@media (min-width: 665px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .productInfoArea {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10%;
+    padding-top: 4%;
+  }
+
+  .productpage img {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    min-width: 100%;
+  }
+
+  .quantityPicker {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-width: 85%;
+    justify-content: space-around;
+    justify-self: center;
+  }
+
+  .amountArea {
+    min-width: 20%;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondary-font);
+  }
+
+  .quantityPicker button {
+    padding: 0.8rem;
+    min-width: 30%;
+    border-radius: 5px;
+    border: none;
+    font-size: 100%;
+  }
+
+  .addToCart {
+    padding: 0.9rem;
+    min-width: 100%;
+    border-radius: 10px;
+    min-height: 4rem;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    justify-self: center;
+  }
 }
