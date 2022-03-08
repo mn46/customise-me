@@ -40,8 +40,8 @@ function handleData(soap) {
     document.querySelector(".shortProductDescription").textContent = soap.description;
     document.querySelector(".price").textContent = soap.price;
 
-    document.querySelector(".productpage img").src=`./${soap.img}`;
-    // document.querySelector("img.moviePoster").alt=movie.Title;
+    document.querySelector(".productpage img").src=`./css/assets/products/${soap.img}`;
+    document.querySelector("img").alt=soap.name;
     // document.querySelector("img.moviePoster").src=`./${movie.image}`;
 }
 
