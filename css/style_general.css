@@ -266,14 +266,14 @@ button {
 
 /* PRODUCTLIST PAGE */
 
-.productlist {
-  font-family: var(--secondary-font);
-}
-
 .showingProductsText {
   display: flex;
   justify-content: center;
   padding: 1rem;
+}
+
+article a {
+  font-size: 0px;
 }
 
 .dropdown {
@@ -311,6 +311,7 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   padding: 8%;
+  font-family: var(--secondary-font);
 }
 
 .productlist article {
@@ -330,6 +331,11 @@ article h2 {
   justify-content: center;
   align-items: center;
   color: var(--secondary-font-color);
+  z-index: 10;
+}
+
+.productlist article a p {
+  display: none;
 }
 
 article .price {
@@ -361,9 +367,60 @@ article .addToCartArea {
   align-items: flex-end;
 }
 
-/* MEDIA QUERIES */
+#quiz {
+  min-height: 18rem;
+  position: relative;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-/* RESPONSIVE PRODUCTPAGE - DESKTOP */
+  font-size: 1em;
+  background-image: linear-gradient(
+    to right,
+    #aaeed5 0%,
+    #95daf1 50%,
+    #ffcfd1 100%
+  );
+}
+
+/* #quiz h2 {
+  padding: 1rem;
+} */
+
+#quiz button {
+  border-radius: 20px;
+  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+  font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+/* RESPONSIVE PRODUCTLIST - FOR DESKTOP */
+@media (min-width: 665px) {
+  .productsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 8%;
+  }
+}
+
+@media (min-width: 886px) {
+  .productsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 8%;
+  }
+
+  article .price {
+    padding-left: 0;
+  }
+}
+
+/* RESPONSIVE PRODUCTPAGE - FOR DESKTOP */
 @media (min-width: 665px) {
   main {
     display: grid;
