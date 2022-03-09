@@ -39,16 +39,15 @@ const template = document.querySelector("#productTemplate").content;
 const copy = template.cloneNode(true);
 
 //change content
-//copy.querySelector("a").setAttribute("href", `product.html?_id=${product.id}`)
+copy.querySelector("a").setAttribute("href", `product.html?_id=${product._id}`)
 //copy.querySelector("a").setAttribute("href", `product.html?_id=${product.id}`)
 
 copy.querySelector("h2").textContent = product.name;
+copy.querySelector(".price").textContent = product.price;
 //document.querySelector(".addToCartArea.price").textContent = product.price;
 
 copy.querySelector("img").src=`./css/assets/products/${product.img}`;
     // document.querySelector("img").alt=soap.name;
-
-
 
 
 //grab parent
