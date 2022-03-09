@@ -148,7 +148,10 @@ nav ul li {
 
   /* BUTTONS */
   --button-white: white;
-  --button-gradient: red;
+  --button-gradient: #1100df;
+  --button-hover-colour: #1002ad;
+  --subtle-hover-colour: #ffcfd1;
+  --subtle-hover-colour2: #8eecf5;
 }
 
 body {
@@ -165,6 +168,11 @@ h2 {
 
 button {
   background-color: var(--button-gradient);
+  max-width: 100%;
+}
+
+button:hover {
+  background-color: var(--button-hover-colour);
   max-width: 100%;
 }
 
@@ -279,19 +287,76 @@ article a {
 .dropdown {
   position: relative;
   display: inline-block;
+  max-width: 100%;
+}
+
+.dropdownFilter {
+  position: relative;
+  display: inline-block;
+}
+
+.sortByList {
+  display: flex;
+}
+
+.sortListItem {
+  list-style: none;
+  padding: 1rem 2rem 1rem 1.5rem;
+}
+
+.sortListItem:hover {
+  background-color: var(--subtle-hover-colour);
+}
+
+.filterList {
+  display: flex;
+}
+
+.filterList ul {
+  margin: 0;
+  padding: 1rem 0 0 0;
+}
+
+.filterListItem {
+  list-style: none;
+  padding: 1rem 5rem 1rem 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: fit-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdownFilter:hover .dropdown-content {
+  display: block;
+  margin-left: -6rem;
+}
+
+.smallSquare {
+  max-width: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+  max-height: 1rem;
+  border: 1px solid;
+  margin-right: 1rem;
+}
+
+.smallSquare:hover {
+  background-color: var(--subtle-hover-colour);
+}
+
+.smallSquare:active {
+  background-color: var(--subtle-hover-colour2);
 }
 
 #filters {
@@ -315,15 +380,14 @@ article a {
 }
 
 .productlist article {
-  padding: 1rem 0 2.5rem 0;
+  padding: 1rem 0 4rem 0;
 }
 
 article h2 {
   border: 0px;
   font-weight: 400;
-  font-size: 1.8em;
-  min-height: 3.4rem;
-  padding: 0%;
+  min-height: fit-content;
+  padding: 0.8rem;
   margin: 0;
   background-color: var(--button-gradient);
   border-radius: 0px 0px 20px 20px;
@@ -331,7 +395,6 @@ article h2 {
   justify-content: center;
   align-items: center;
   color: var(--secondary-font-color);
-  z-index: 10;
 }
 
 .productlist article a p {
@@ -350,6 +413,7 @@ article .price {
   flex-direction: column;
   padding-bottom: 1.2rem;
 }
+
 .productlist article img {
   max-width: 100%;
   border-radius: 20px 20px 0px 0px;
@@ -376,6 +440,7 @@ article .addToCartArea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 4rem;
 
   font-size: 1em;
   background-image: linear-gradient(
@@ -422,7 +487,7 @@ article .addToCartArea {
 
 /* RESPONSIVE PRODUCTPAGE - FOR DESKTOP */
 @media (min-width: 665px) {
-  main {
+  .productpage {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
