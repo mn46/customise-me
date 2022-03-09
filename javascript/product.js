@@ -5,7 +5,8 @@
 
 const url = "https://customiseme-b89c.restdb.io/rest/products/62274ce4b55385400001867f";
 // const url = `https://customiseme-b89c.restdb.io/rest/products?q={"_id":"${id}"}`;
-// const url = "https://customiseme-b89c.restdb.io/rest/products"; 
+// const url = "https://customiseme-b89c.restdb.io/rest/products";
+ //const url = "https://customiseme-b89c.restdb.io/rest/benefits"; 
 // an id=62274ce4b55385400001867f
 
 const options = {

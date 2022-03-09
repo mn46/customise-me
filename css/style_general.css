@@ -164,11 +164,12 @@ h2 {
 }
 
 button {
-  background-color: var(--button-gradient);
+  background-color: var(--headline-color);
   max-width: 100%;
 }
 
 /* PRODUCT PAGE  */
+
 .quantityPicker {
   display: flex;
   flex-direction: row;
@@ -265,6 +266,16 @@ button {
 
 /* PRODUCTLIST PAGE */
 
+.productlist {
+  font-family: var(--secondary-font);
+}
+
+.showingProductsText {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -285,8 +296,15 @@ button {
 
 #filters {
   display: flex;
-  min-width: 100%;
+  max-width: 100%;
   justify-content: space-between;
+  padding-top: 1rem;
+}
+
+#filters button {
+  padding: 0.6rem 3rem 0.6rem 3rem;
+  border-radius: 3px;
+  font-size: 1.2rem;
 }
 
 .productlist {
@@ -340,6 +358,7 @@ article .addToCartArea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 /* MEDIA QUERIES */
