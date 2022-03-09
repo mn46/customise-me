@@ -456,11 +456,15 @@ color: var(--headline-color);
 
 .color_icon {
     margin-top: 5%;
-    width: 5.5em;
-    aspect-ratio: 1/1;
+    width: 5em;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+}
+
+.color_icon p {
+  text-align: center;
 }
 
 /* essential oils */
@@ -547,6 +551,11 @@ color: var(--headline-color);
 
 .hidden {
   display: none;
+}
+
+.color {
+  color: var(--headline-color);
+  font-weight: 400;
 }
 
 /* MEDIA QUERIES */

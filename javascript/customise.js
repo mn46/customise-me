@@ -35,7 +35,7 @@ function addTemplate(oils) {
         return;
     }
 
-// template for top note
+    // template for top note
 
     if (oils.note = "headnote") {
         const topTemplate = document.querySelector("#top_note_oil").content;
@@ -51,23 +51,30 @@ function addTemplate(oils) {
 
         document.querySelector(".container_oils_top").appendChild(topClone);
     }
-    
-
-    function hoverElement() {
-        document.querySelector(".color_icon").addEventListener("click", swapImage());
-
-        function swapImage() {
-            document.querySelector(".color_icon img:first-of-type").classList.add("hidden");
-            document.querySelector(".color_icon img:last-of-type").classList.remove("hidden");
-        }
-    }
-
-    
-
-    console.log(hoverElement);
-    hoverElement();
-
 
 }
 
-// creating the template
+
+// behavior of icons
+
+function changeAppearance() {
+
+    document.querySelector(".vis_container .color_icon").addEventListener("click", swapImage);
+
+    function swapImage() {
+        document.querySelector(".vis_container .color_icon .first").classList.add("hidden");
+        document.querySelector(".vis_container .color_icon img:last-child").classList.remove("hidden");
+        document.querySelector(".vis_container .color_icon p").classList.add("color");
+        document.querySelector(".vis_container .color_icon").addEventListener("click", unclick);
+    }
+
+    function unclick() {
+        document.querySelector(".vis_container .color_icon .first").classList.remove("hidden");
+        document.querySelector(".vis_container .color_icon img:last-child").classList.add("hidden");
+        document.querySelector(".vis_container .color_icon p").classList.remove("color");
+        
+        document.querySelector(".vis_container .color_icon").addEventListener("click", swapImage);
+    }
+}
+
+changeAppearance();
