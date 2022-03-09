@@ -148,7 +148,7 @@ nav ul li {
 
   /* BUTTONS */
   --button-white: white;
-  --button-gradient: blue;
+  --button-gradient: red;
 }
 
 body {
@@ -164,7 +164,7 @@ h2 {
 }
 
 button {
-  background-color: var(--headline-color);
+  background-color: var(--button-gradient);
   max-width: 100%;
 }
 
