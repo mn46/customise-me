@@ -16,8 +16,8 @@ button {
   margin-left: 2vh;
 }
 
-nav  {
-    background-color: #fff;
+nav {
+  background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -151,7 +151,7 @@ nav ul li {
   --secondary-font: "Rubik", sans-serif;
   --font-color: #464646;
   --secondary-font-color: #ffffff;
-  --headline-color: #1100DF;
+  --headline-color: #1100df;
 
   /* BUTTONS */
   --button-white: white;
@@ -165,8 +165,11 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
-    font-family: var(--primary-font);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--primary-font);
 }
 
 h1 {
@@ -180,7 +183,7 @@ h2 {
 }
 
 p {
-    font-family: var(--secondary-font);
+  font-family: var(--secondary-font);
 }
 
 button {
@@ -287,6 +290,34 @@ button:hover {
   padding-top: 2rem;
   display: grid;
   row-gap: 0.5rem;
+}
+
+/*horizontal scroll*/
+
+#ready_made {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.soap {
+  display: flex;
+  gap: 2rem;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+#ready_made h2 {
+  grid-column: 1/4;
+  text-align: center;
+  grid-row: 1/2;
+}
+
+.horizontal {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  overflow-x: auto;
+  margin-left: 5vh;
 }
 
 /* PRODUCTLIST PAGE */
@@ -572,81 +603,83 @@ article .addToCartArea {
 }
 
 #grid_right h4 {
-font-weight: 500;
-columns: var(--headline-color);
-text-transform: uppercase;
-color: var(--headline-color);
+  font-weight: 500;
+  columns: var(--headline-color);
+  text-transform: uppercase;
+  color: var(--headline-color);
 }
 
 #product_grid {
-    display: grid;
-    grid-template-columns: 35% 60%;
-    grid-gap: 5%;
+  display: grid;
+  grid-template-columns: 35% 60%;
+  grid-gap: 5%;
 }
 
 #grid_left {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 7vh;
-    background-image: url(assets/customise_soap_background.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 93vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 7vh;
+  background-image: url(assets/customise_soap_background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #start_creating {
-    align-self: center;
+  align-self: center;
 }
 
 #price_container {
-    margin-top: 5%;
-    height: 10%;
-    width: 60%;
-    background-color: #1100DF;
-    border-radius: 2.5em;
-    align-self: center;
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 5%;
+  height: 10%;
+  width: 60%;
+  background-color: #1100df;
+  border-radius: 2.5em;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #price_container p {
-    color: #fff;
-    font-family: var(--primary-font);
-    font-size: 1.5em;
+  color: #fff;
+  font-family: var(--primary-font);
+  font-size: 1.5em;
 }
 
 /* ingredients */
 
 #grid_right {
-    display: flex;
-    flex-direction: column;
-    padding: 5% 8% 10% 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 8% 10% 0;
 }
 
-#shapes, #colors, #oil {
-    margin-top: 7%;
+#shapes,
+#colors,
+#oil {
+  margin-top: 7%;
 }
 
 .vis_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 8%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8%;
 }
 
 .color_icon {
-    margin-top: 5%;
-    width: 5.5em;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 5%;
+  width: 5.5em;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* essential oils */
@@ -655,7 +688,8 @@ color: var(--headline-color);
   margin-top: 8%;
 }
 
-#base_note, #middle_note {
+#base_note,
+#middle_note {
   margin-top: 12%;
 }
 
@@ -696,7 +730,7 @@ color: var(--headline-color);
 }
 
 .oil_info img {
-    width: 70%;
+  width: 70%;
 }
 
 .oils_container button {
