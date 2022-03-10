@@ -12,14 +12,15 @@
   <body>
     <nav>
         <a href="index.html"><img src="css/assets/logo.svg" id="logo" alt="logo"></a>
+        <img class="hamburgermenu" onclick="myFunction()" src="css/assets/hamburger.svg" alt="hamburgermenu"></li>
         <ul id="navigation_list">
             <li><a href="index.html">home</a></li>
             <li><a href="shop.html">shop</a></li>
-            <li>about</li>
-            <li>contact</li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
             <li><a href="customise.html">create your soap</a></li>
-            <li>sign up</li>
-            <li><img src="" alt="cart icon"></li>
+            <li><a href="#">sign up</a></li>
+            <li><img id="cart" src="css/assets/cart.svg" alt="cart_icon"></li>
         </ul>
     </nav>
 
@@ -46,10 +47,6 @@
             <div id="bubble6"></div>
             <div id="bubble7"></div>
         </div>
-        <div>
-          <img src="" alt="icon" />
-          <p></p>
-        </div>
 
         <!-- how to do that -->
 
@@ -58,17 +55,17 @@
             <h2>What will you get?</h2>
 
             <div id="uniquesoap">
-                <img src="css/assets/placeholder.svg" alt="placeholder">
+                <img src="css/assets/unique_soap.svg" alt="placeholder">
                 <p>Create your own, unique soap.</p>
             </div>
 
             <div id="highquality">
-                <img src="css/assets/placeholder.svg" alt="placeholder1">
+                <img src="css/assets/hq_ingredients.svg" alt="placeholder1">
                 <p>High quality ingredients.</p>
             </div>
 
             <div id="organicproducts">
-              <img src="css/assets/placeholder.svg" alt="placeholder2">
+              <img src="css/assets/organic.svg" alt="placeholder2">
               <p>Organic and sustainable product.</p>
           </div>
 
@@ -76,13 +73,13 @@
 
         <div id="activities">
           <article id="workshop">
-            <img src="css/assets/placeholder.svg" alt="huih">
+            <img src="css/assets/workshop.svg" alt="workshop">
             <p>Learn how to create soaps during workshops.</p>
             <a href=""><button>READ MORE</button></a>
           </article>
 
           <article id="createsoap">
-            <img src="css/assets/placeholder.svg" alt="jiin">
+            <img src="css/assets/IMG_1780.png" alt="soaps">
             <p>Choose ingredients and let us do the rest.</p>
             <a href=""><button>READ MORE</button></a>
           </article>
@@ -97,7 +94,6 @@
             <h2>Buy a ready-made soap</h2>
 
             <div id="horizontal">
-
                 <template id="product_group">
                     <div class="product_link">
                         <img src="" alt="">
@@ -108,22 +104,12 @@
                         <a href=""><button>add to cart</button></a>
                     </div>
                 </template>
-
                 <img id="arrow_right" alt="">
-
             </div>
-
         </div>
       </div>
 
-      <!-- how to do that -->
 
-      <div id="how">
-        <h2>Here's how you can get it</h2>
-        <div id="workshops">
-          <img src="" alt="">
-        </div>
-      </div>
     </main>
 
     <footer>
@@ -141,13 +127,14 @@
         <p>info@customiseme.dk</p>
         <div id="some">
           <a href="https://www.facebook.com/customisemedk" target="_blank"
-            ><img src="" alt="facebook icon"
+            ><img src="css/assets/facebook.svg" alt="facebook icon"
           /></a>
           <a href="https://www.instagram.com/customisemedk/" target="_blank"
-            ><img src="" alt="facebook icon"
+            ><img src="css/assets/instagram.svg" alt="facebook icon"
           /></a>
         </div>
       </div>
     </footer>
+    <script src="home.js"></script>
   </body>
 </html>
