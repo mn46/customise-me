@@ -594,15 +594,279 @@ article .addToCartArea {
   align-items: center;
   justify-content: center;
   margin-bottom: 4rem;
-
   font-size: 1em;
   background-image: linear-gradient(
-    to right,
-    #aaeed5 0%,
-    #95daf1 50%,
-    #ffcfd1 100%
+  to right,
+  #aaeed5 0%,
+  #95daf1 50%,
+  #ffcfd1 100%
   );
+  
+  }
+
+
+/* customise page */
+
+#grid_right p {
+  font-size: 1.2em;
+  line-height: 180%;
 }
+
+#grid_right h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+#grid_right h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+#grid_right h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#grid_right h4 {
+font-weight: 500;
+columns: var(--headline-color);
+text-transform: uppercase;
+color: var(--headline-color);
+}
+
+#product_grid {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-gap: 5%;
+}
+
+#grid_left {
+  
+    position: -webkit-sticky;
+    position: sticky;
+    top: 7vh;
+    background-image: url(assets/customise_soap_background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#start_creating {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-self: center;
+}
+
+#start_creating h2 {
+  position: static;
+  margin-top: 50%;
+  text-align: center;
+}
+
+#start_creating img#cedar_icon {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 12 / 13;
+  top: 8%;
+  left: 65%;
+  animation: swing 2s ease-in-out infinite;
+}
+
+#start_creating img#patchouli_icon {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 9 / 11;
+  top: 75%;
+  left: 22%;
+  animation: swing 2s ease-in-out infinite;
+}
+
+#start_creating img#rosemary_icon {
+  position: absolute;
+  width: 13%;
+  aspect-ratio: 108 / 211;
+  top: 13%;
+  left: 10%;
+  animation: swing2 2s ease-in-out infinite;
+}
+
+#heart_icon {
+  position: absolute;
+  top: 32%;
+  left: 25.5%;
+  width: 50%;
+  aspect-ratio: 48 / 41;
+}
+
+#price_container {
+  margin-bottom: 10%;
+    height: 10%;
+    width: 60%;
+    background-color: #1100DF;
+    border-radius: 2.5em;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#price_container p {
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+}
+
+/* ingredients */
+
+#grid_right {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 8% 10% 0;
+}
+
+#shapes, #colors, #oil {
+    margin-top: 7%;
+}
+
+.vis_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8%;
+}
+
+.color_icon {
+    margin-top: 5%;
+    width: 5em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#colors .color_icon p {
+  text-align: center;
+  line-height: 140%;
+}
+
+/* essential oils */
+
+#pyramid {
+  margin: auto;
+}
+
+#top_note {
+  margin-top: 8%;
+}
+
+#base_note, #middle_note {
+  margin-top: 12%;
+}
+
+.container_oils_top, .container_oils_middle, .container_oils_base {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+
+.oils_container {
+  margin-top: 5%;
+  padding: 2% 2% 4% 2%;
+  box-shadow: 0.05em 0.05em 0.8em #9c9c9c;
+  border-radius: 1em;
+  width: 13em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.oil_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#grid_right .oil_info p {
+  font-size: 1em;
+  line-height: 160%;
+}
+
+.oil_info h4 {
+  margin-top: 1.3em;
+  margin-bottom: 0;
+  font-size: 1.3em;
+}
+
+.oil_info img {
+    width: 90%;
+}
+
+.oils_container button {
+  padding: 0.6em 3em 0.6em 3em;
+  border-radius: 0.7em;
+  background-color: var(--headline-color);
+  border: none;
+  font-family: var(--primary-font);
+  font-size: 1em;
+  color: #fff;
+}
+
+#finished {
+  width: 40%;
+  margin: 10% 0 5% 0;
+  padding: 0.8em 2.5em 0.8em 2.5em;
+  border-radius: 0.7em;
+  background-color: var(--headline-color);
+  border: none;
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: #fff;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.color {
+  color: var(--headline-color);
+  font-weight: 400;
+}
+
+.color_icon:focus {
+  filter: invert(24%) sepia(82%) saturate(7413%) hue-rotate(248deg) brightness(75%) contrast(150%);
+}
+
+.color_icon:hover {
+  filter: invert(24%) sepia(82%) saturate(7413%) hue-rotate(248deg) brightness(75%) contrast(150%);
+  font-weight: 500;
+}
+
+/* keyframes */
+
+@keyframes swing {
+  50% {transform: rotateZ(0.3rad);}
+  100% {transform: rotateZ(0);}
+}
+
+@keyframes swing2 {
+  50% {transform: rotateZ(-0.3rad);}
+  100% {transform: rotateZ(0);}
+}
+
+/* MEDIA QUERIES */
+
 
 /* #quiz h2 {
   padding: 1rem;
@@ -643,7 +907,7 @@ article .addToCartArea {
   .productpage {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   #ready_made {
     display: grid;
