@@ -49,7 +49,6 @@ copy.querySelector(".price").textContent = product.price;
 copy.querySelector("img").src=`./css/assets/products/${product.img}`;
     // document.querySelector("img").alt=soap.name;
 
-
 //grab parent
 const parent = document.querySelector(".productsGrid");
 
