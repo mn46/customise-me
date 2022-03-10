@@ -199,10 +199,13 @@ footer {
     rgba(149, 218, 241, 1) 35%,
     rgba(255, 207, 209, 1) 100%
   );
-  display: grid;
+  display: flex;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 60px;
-  margin: auto;
+  margin: auto; */
 }
 
 :root {

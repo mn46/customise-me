@@ -11,17 +11,18 @@
   <body>
     <header>
       <nav>
-        <img src="css/assets/logo.svg" id="logo" alt="logo" />
+        <a href="index.html"><img src="css/assets/logo.svg" id="logo" alt="logo"></a>
+        <img class="hamburgermenu" onclick="myFunction()" src="css/assets/hamburger.svg" alt="hamburgermenu"></li>
         <ul id="navigation_list">
-          <li><a href="index.html">home</a></li>
-          <li><a href="shop.html">shop</a></li>
-          <li>about</li>
-          <li>contact</li>
-          <li><a href="customise.html">create your soap</a></li>
-          <li>sign up</li>
-          <li><img src="" alt="cart icon" /></li>
+            <li><a href="index.html">home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="customise.html">create your soap</a></li>
+            <li><a href="#">sign up</a></li>
+            <li><img id="cart" src="css/assets/cart.svg" alt="cart_icon"></li>
         </ul>
-      </nav>
+    </nav>
     </header>
     <main class="productpage">
       <img src="soap_placeholder.png" alt="image-of-soap" />
@@ -76,12 +77,10 @@
       <div id="contact">
         <p>info@customiseme.dk</p>
         <div id="some">
-          <a href="https://www.facebook.com/customisemedk" target="_blank"
-            ><img src="" alt="facebook icon"
-          /></a>
-          <a href="https://www.instagram.com/customisemedk/" target="_blank"
-            ><img src="" alt="facebook icon"
-          /></a>
+          <a href="https://www.facebook.com/customisemedk" target="_blank"><img src="css/assets/facebook.svg"
+              alt="facebook icon" /></a>
+          <a href="https://www.instagram.com/customisemedk/" target="_blank"><img src="css/assets/instagram.svg"
+              alt="facebook icon" /></a>
         </div>
       </div>
     </footer>
