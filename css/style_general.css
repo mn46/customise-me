@@ -14,6 +14,7 @@ button {
   height: 6vh;
   padding: 3px;
   margin-left: 2vh;
+  margin-top: 1vh;
 }
 
 nav {
@@ -26,16 +27,35 @@ nav {
   position: -webkit-sticky;
   top: 0;
   z-index: 1;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
   text-decoration: none;
 }
 
-nav ul li {
+#cart {
+  height: 4vh;
+}
+
+#navigation_list {
+  display: block;
+}
+
+#navigation_list li {
   display: inline-block;
   font-family: var(--primary-font);
-  margin-right: 2vh;
+  margin-right: 3vh;
+}
+
+#navigation_list li a:visited {
+  color: black;
+}
+
+.hamburgermenu {
+  display: none;
+  height: 3.5vh;
+  cursor: pointer;
 }
 
 #main_banner {
@@ -85,6 +105,8 @@ nav ul li {
 #how {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 6rem;
   grid-template-rows: 0.6fr 1.5fr;
   margin-top: 20vh;
 }
@@ -94,6 +116,7 @@ nav ul li {
   justify-content: space-between;
   font-family: var(--primary-font);
   color: blue;
+  margin-top: 3vh;
 }
 
 #activities {
@@ -102,10 +125,14 @@ nav ul li {
   grid-template-columns: 1fr 1fr;
   text-align: center;
   font-family: var(--primary-font);
+  background-color: #aaefd494;
+  align-items: center;
+  padding: 10vh;
 }
 
 #activities img {
-  height: 15vh;
+  max-width: 70%;
+  border-radius: 19px;
 }
 
 #activities button {
@@ -115,9 +142,13 @@ nav ul li {
 }
 
 #how img {
-  height: 5vh;
-  margin-top: 1vh;
+  height: 10vh;
   margin-right: 1vh;
+}
+
+#how p {
+  display: flex;
+  margin: auto;
 }
 
 #how h2 {
@@ -142,6 +173,35 @@ nav ul li {
 #organicproducts {
   grid-column: 3/4;
   grid-row: 2/3;
+  margin: auto;
+}
+
+#ready_made {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 15vh;
+  height: 80vh;
+}
+
+#ready_made h2 {
+  grid-column: 2/3;
+  text-align: center;
+  color: blue;
+}
+
+footer {
+  font-family: var(--primary-font);
+  background: rgb(142, 236, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(142, 236, 245, 1) 0%,
+    rgba(149, 218, 241, 1) 35%,
+    rgba(255, 207, 209, 1) 100%
+  );
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 60px;
   margin: auto;
 }
 
@@ -194,6 +254,22 @@ button {
 button:hover {
   background-color: var(--button-hover-colour);
   max-width: 100%;
+}
+
+#links {
+  text-decoration: underline;
+}
+
+footer div {
+  margin: auto;
+}
+
+footer img {
+  height: 5vh;
+}
+
+#some img {
+  margin-left: 1.5rem;
 }
 
 /* PRODUCT PAGE  */
@@ -540,210 +616,298 @@ article .addToCartArea {
     grid-template-columns: 1fr 1fr;
   }
 
-  .productInfoArea {
+  #ready_made {
     display: grid;
-    grid-template-columns: 1fr;
-    padding: 10%;
-    padding-top: 4%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 
-  .productpage img {
-    position: -webkit-sticky; /* Safari */
+  .soap {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  #ready_made h2 {
+    grid-column: 1/4;
+    text-align: center;
+    grid-row: 1/2;
+  }
+
+  .horizontal {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    overflow-x: auto;
+    margin-left: 5vh;
+  }
+
+  /* ::-webkit-scrollbar-track {
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+} */
+
+  .product_link button {
+    padding: 5px;
+    border-radius: 20px;
+    width: 15vh;
+  }
+
+  .product_link {
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  .product_link h3 {
+    font-family: var(--primary-font);
+    line-height: 1.5rem;
+  }
+
+  .price {
+    font-family: var(--primary-font);
+  }
+
+  .product_link img {
+    height: 200px;
+    border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 970px) {
+    #how {
+      grid-template-rows: auto;
+    }
+    #how p {
+      text-align: center;
+    }
+    #how h2 {
+      grid-column: 1/4;
+    }
+    #how div {
+      display: inline-block;
+      margin-top: 5vh;
+    }
+    #how img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2vh;
+    }
+    #uniquesoap {
+      grid-column: 1/4;
+      grid-row: 2/3;
+      margin: auto;
+    }
+
+    #highquality {
+      grid-column: 1/4;
+      grid-row: 3/4;
+      margin: auto;
+    }
+    #organicproducts {
+      grid-column: 1/4;
+      grid-row: 4/5;
+      margin: auto;
+    }
+    #activities {
+      grid-template-rows: auto;
+      row-gap: 10vh;
+      padding: 4vh;
+    }
+    #activities img {
+      width: 100%;
+    }
+    #activities article {
+      display: inline-block;
+    }
+    #createsoap {
+      grid-row: 2/3;
+      grid-column: 1/3;
+    }
+    #workshop {
+      grid-row: 1/2;
+      grid-column: 1/3;
+    }
+  }
+
+  /*burgermenu*/
+
+  @media only screen and (max-width: 680px) {
+    .hamburgermenu {
+      display: block;
+      margin-top: 3vh;
+      margin-right: 1vh;
+    }
+    #navigation_list {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      row-gap: 1.5vh;
+    }
+    #navigation_list.show {
+      display: flex;
+    }
+  }
+
+  /*footer*/
+
+  @media only screen and (max-width: 760px) {
+    footer {
+      grid-template-rows: auto;
+      text-align: center;
+    }
+  }
+  /* customise page */
+
+  #grid_right h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  #grid_right h4 {
+    font-weight: 500;
+    columns: var(--headline-color);
+    text-transform: uppercase;
+    color: var(--headline-color);
+  }
+
+  #product_grid {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-gap: 5%;
+  }
+
+  #grid_left {
+    position: -webkit-sticky;
     position: sticky;
-    top: 0;
-    min-width: 100%;
+    top: 7vh;
+    background-image: url(assets/customise_soap_background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .quantityPicker {
+  #start_creating {
+    align-self: center;
+  }
+
+  #price_container {
+    margin-top: 5%;
+    height: 10%;
+    width: 60%;
+    background-color: #1100df;
+    border-radius: 2.5em;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #price_container p {
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1.5em;
+  }
+
+  /* ingredients */
+
+  #grid_right {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 8% 10% 0;
+  }
+
+  #shapes,
+  #colors,
+  #oil {
+    margin-top: 7%;
+  }
+
+  .vis_container {
     display: flex;
     flex-direction: row;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    min-width: 85%;
-    justify-content: space-around;
-    justify-self: center;
+    flex-wrap: wrap;
+    gap: 8%;
   }
 
-  .amountArea {
-    min-width: 20%;
-    border: 1px solid;
-    border-radius: 5px;
+  .color_icon {
+    margin-top: 5%;
+    width: 5.5em;
+    aspect-ratio: 1/1;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-family: var(--secondary-font);
   }
 
-  .quantityPicker button {
-    padding: 0.8rem;
-    min-width: 30%;
-    border-radius: 5px;
-    border: none;
-    font-size: 100%;
+  /* essential oils */
+
+  #top_note {
+    margin-top: 8%;
   }
 
-  .addToCart {
-    padding: 0.9rem;
-    min-width: 100%;
-    border-radius: 10px;
-    min-height: 4rem;
+  #base_note,
+  #middle_note {
+    margin-top: 12%;
+  }
+
+  .vis_container_oils {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4%;
+  }
+
+  .oils_container {
+    margin-top: 5%;
+    padding: 2% 2% 4% 2%;
+    box-shadow: 0.05em 0.05em 0.8em #9c9c9c;
+    border-radius: 1em;
+    width: 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .oil_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oil_info p {
+    font-size: 0.85em;
+    line-height: 130%;
+  }
+
+  .oil_info h4 {
+    margin-top: 1.3em;
+    margin-bottom: 0;
+    font-size: 1.3em;
+  }
+
+  .oil_info img {
+    width: 70%;
+  }
+
+  .oils_container button {
+    padding: 0.6em 3em 0.6em 3em;
+    border-radius: 0.7em;
+    background-color: var(--headline-color);
     border: none;
-    font-size: 1.5rem;
     font-family: var(--primary-font);
-    justify-self: center;
+    font-size: 1em;
+    color: #fff;
   }
-}
-/* customise page */
 
-#grid_right h3 {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-#grid_right h4 {
-  font-weight: 500;
-  columns: var(--headline-color);
-  text-transform: uppercase;
-  color: var(--headline-color);
-}
-
-#product_grid {
-  display: grid;
-  grid-template-columns: 35% 60%;
-  grid-gap: 5%;
-}
-
-#grid_left {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 7vh;
-  background-image: url(assets/customise_soap_background.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 93vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#start_creating {
-  align-self: center;
-}
-
-#price_container {
-  margin-top: 5%;
-  height: 10%;
-  width: 60%;
-  background-color: #1100df;
-  border-radius: 2.5em;
-  align-self: center;
-  justify-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#price_container p {
-  color: #fff;
-  font-family: var(--primary-font);
-  font-size: 1.5em;
-}
-
-/* ingredients */
-
-#grid_right {
-  display: flex;
-  flex-direction: column;
-  padding: 5% 8% 10% 0;
-}
-
-#shapes,
-#colors,
-#oil {
-  margin-top: 7%;
-}
-
-.vis_container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 8%;
-}
-
-.color_icon {
-  margin-top: 5%;
-  width: 5.5em;
-  aspect-ratio: 1/1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* essential oils */
-
-#top_note {
-  margin-top: 8%;
-}
-
-#base_note,
-#middle_note {
-  margin-top: 12%;
-}
-
-.vis_container_oils {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4%;
-}
-
-.oils_container {
-  margin-top: 5%;
-  padding: 2% 2% 4% 2%;
-  box-shadow: 0.05em 0.05em 0.8em #9c9c9c;
-  border-radius: 1em;
-  width: 13em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.oil_info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.oil_info p {
-  font-size: 0.85em;
-  line-height: 130%;
-}
-
-.oil_info h4 {
-  margin-top: 1.3em;
-  margin-bottom: 0;
-  font-size: 1.3em;
-}
-
-.oil_info img {
-  width: 70%;
-}
-
-.oils_container button {
-  padding: 0.6em 3em 0.6em 3em;
-  border-radius: 0.7em;
-  background-color: var(--headline-color);
-  border: none;
-  font-family: var(--primary-font);
-  font-size: 1em;
-  color: #fff;
-}
-
-/* .added .oil_info {
+  /* .added .oil_info {
   opacity: 60%;
 }
 
@@ -751,16 +915,39 @@ article .addToCartArea {
   background-color: #7c7c7c;
 } */
 
-#finished {
-  width: 40%;
-  margin: 10% 0 5% 0;
-  padding: 0.8em 2.5em 0.8em 2.5em;
-  border-radius: 0.7em;
-  background-color: var(--headline-color);
-  border: none;
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: #fff;
-  align-self: center;
+  #finished {
+    width: 40%;
+    margin: 10% 0 5% 0;
+    padding: 0.8em 2.5em 0.8em 2.5em;
+    border-radius: 0.7em;
+    background-color: var(--headline-color);
+    border: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+    align-self: center;
+  }
+  footer div {
+    padding: 10px;
+  }
+  #links {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+  #address {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+  #contact {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+  #some img {
+    margin-left: 0;
+  }
+  #some {
+    display: flex;
+    justify-content: space-around;
+  }
 }
