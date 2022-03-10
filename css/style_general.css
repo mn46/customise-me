@@ -21,11 +21,11 @@ nav  {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
   text-decoration: none;
-  margin: auto;
 }
 
 #cart{
@@ -401,15 +401,18 @@ footer img {
 @media only screen and (max-width: 680px) {
   .hamburgermenu {
     display: block;
-    margin: auto;
+    margin-top: 3vh;
+    margin-right: 1vh;
   }
-  #navigation_list li a {
+  #navigation_list {
     display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1vh;
   }
-  #navigation_list li a .active {
-    background-color: aquamarine;
+  #navigation_list.show {
     display: flex;
-    position: relative;
   }
 }
 
